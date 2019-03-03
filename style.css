@@ -47,22 +47,36 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-input {
+.email-field, .pass-field {
+  display: flex;
   margin: 10px;
-  padding: 2%;
-  border-radius: 5px;
   width: 75%;
+  margin-bottom: 15px;
+}
+.icon {
+  position: absolute;
+  padding: 10px;
+  background: #d33f8d;
+  color: white;
+  width: 2%;
+  height: 3%;
+  text-align: center;
+  border-radius: 5px;
+}
+input {
+  padding: 2%;
+  padding-left: 55px;
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
   font-size: 16px;
   line-height: 1.2;
   color: #686868;
   background: #e6e6e6;
+  outline: none;
 }
 input:hover {
   border-color: #d33f8d;
-}
-input:focus {
-  transform: scaleX(1.1); 
-  transition: .2s ease-in-out .1s;
 }
 button {
   margin: 10px;
@@ -99,8 +113,11 @@ button, .res-link, .log-link {
   }
 }
 
-@media (max-width: 800px) and (min-width: 700) {
+@media (max-width: 600px) {
   .main {
     width: 50%;
+  }
+  h1 {
+    font-size: 26px;
   }
 }
